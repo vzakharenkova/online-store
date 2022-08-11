@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flower Shop</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+<script defer src="main.js"></script></head>
+<body>
+  <header>
+    <h1>
+      Flower Shop
+    </h1>
+    <nav id="site_nav">
+      <div class="nav_item">
+        Home
+      </div>
+      <div class="nav_item">
+        About
+      </div>
+      <div class="nav_item">
+        Products
+      </div>
+    </nav>
+    <section id="user_tools">
+      <div id="basket">
+        <div id="products_amount_in_basket">
+          <div>
+            0
+          </div>
+        </div>
+        <div class="tools_icon">
+          <img src="./assets/shopping.svg">
+        </div>
+        <div class="tools_title">
+          Basket
+        </div>
+      </div>
+      <div id="login">
+        <div class="tools_icon">
+          <img src="./assets/profile.svg">
+        </div>
+        <div class="tools_title">
+          Log in
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <h2 class="page_title">
+      Products
+    </h2>
+    <section id="store_content_field">
+      <div id="store_products_nav">
+        <div id="search_field">
+          <label for="site_search"></label>
+          <input type="search" id="site_search" name="search" placeholder="Search..." autocomplete="off" autofocus>
+          <button id="search_btn">
+            <img src="./assets/search.svg">
+          </button>
+        </div>
+        <div id="filters_field">
+          <div id="category">Category:
+            <div> 
+              <input type="checkbox" id="large_houseplants" name="category">
+              <label for="large_houseplants">Large houseplants</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="flowering_houseplants" name="category">
+              <label for="flowering_houseplants">Flowering houseplants</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="fruit_houseplants" name="category">
+              <label for="fruit_houseplants">Fruit houseplants</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="cacti" name="category">
+              <label for="cacti">Cacti</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="succulents" name="category">
+              <label for="succulents">Succulents</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="bouquets" name="category">
+              <label for="bouquets">Bouquets of flowers</label>
+            </div>
+          </div>
+          <div id="type">Type:
+            <div> 
+              <input type="checkbox" id="houseplants" name="type">
+              <label for="houseplants">Houseplants</label>
+            </div>
+            <div>
+              <input type="checkbox" id="bouquets" name="type">
+              <label for="bouquets">Bouquets</label>
+            </div>
+          </div>
+          <div id="size">Size:
+            <div> 
+              <input type="checkbox" id="mini" name="size">
+              <label for="mini">Mini</label>
+            </div>
+            <div>
+              <input type="checkbox" id="medium" name="size">
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="checkbox" id="maxi" name="size">
+              <label for="maxi">Maxi</label>
+            </div>
+          </div>
+          <div id="other">Other:
+            <div> 
+              <input type="checkbox" id="true" name="popular">
+              <label for="popular">Most popular</label>
+            </div>
+            <div> 
+              <input type="checkbox" id="true" name="new">
+              <label for="new">New arrival</label>
+            </div>
+          </div>
+          <div id="sliders">
+            <div>Price:
+              <div id="price_slider"></div>
+            </div>
+            <div>Amount:
+              <div id="amount_slider"></div>
+            </div>
+          </div>
+          <button id="clear_btn">Clear filters</button>
+        </div>
+      </div>
+      <div id="store_products_list">
+        <div id="sort_field">
+          <div id="sort_by">Sort by:
+            <select name="select">
+              <option value="none" selected></option>
+              <optgroup label="Name">
+                <option value="name_up">A - Z</option>
+                <option value="name_down">Z - A</option>
+              </optgroup>
+              <optgroup label="Price">
+                <option value="price_up">Lowest</option>
+                <option value="price_down">Highest</option>
+              </optgroup>
+            </select>
+          </div>
+          <div id="search_result"></div>
+        </div>
+        <div id="products_field">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="github">
+      © 2022
+      <a href="https://github.com/vzakharenkova" target="_blank">
+          github
+      </a>
+    </div>
+    <div id="rs">
+      <a href="https://rs.school/js/" target="_blank">
+          <img src="./assets/rs_logo.svg" alt="RSSchool logo">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
